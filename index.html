@@ -1,0 +1,79 @@
+<html>
+<head>
+<title> Kalculator saya </title>
+<style>
+body
+{
+background: purple;
+}
+*
+{
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+}
+.Wrap
+{
+width:400px;
+margin:auto;
+height:auto;
+background:grey;
+padding:15px;
+border-radius:10px;
+box-shadow:black;
+}
+input[type=text]
+{
+width:80%;
+padding:10px;
+font-size:22px;
+font-height:bold;
+margin-top:20px;
+border-radius:5px;
+}
+input[type=button]
+{
+width:70px;
+padding:10px;
+font-size:22px;
+font-height:bold;
+border-radius:5px;
+}
+#del
+{
+width:50%;
+}
+</style>
+</head>
+<div class="Wrap">
+<form name="Cal">
+<input type="text" name="display"/>
+<br>
+<br>
+<input type="button" value="4" 
+onclick="Cal.display.value+='4'">
+<input type="button" value="3" 
+onclick="Cal.display.value+='3'">
+<input type="button" value="2" 
+onclick="Cal.display.value+='2'">
+<input type="button" value="1" 
+onclick="Cal.display.value+='1'">
+<br>
+<br>
+<input type="button" value="+" 
+onclick="Cal.display.value+='+'">
+<input type="button" value="-" 	
+onclick="Cal.display.value+='-'">
+<input type="button" value="=" 
+onclick="Cal.display.value=eval(Cal.display.value)">
+<br>
+<br>
+<input type="button" value="DELETE"
+onclick="Cal.display.value=' '" 
+id="del">
+
+
+
+</form>
+</div>
+</html>
